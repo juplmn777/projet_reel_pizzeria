@@ -1,0 +1,37 @@
+body{
+    background-color: #e51c23;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+table{
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+img{
+    width: 150px;
+    padding-bottom: 50px;
+}
+
+a{
+    padding:10px;
+    font-weight: bold;
+    border: 1px solid #fff;
+    border-radius: 5%;
+}
+
+.registration{
+    background-color: #259b24;
+}
+
+.connection{
+    background-color: #259b24;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}

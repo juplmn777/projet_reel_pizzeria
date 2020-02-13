@@ -1,0 +1,751 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.green {
+  background-color: rgb(37, 155, 36);
+}
+
+.greenc {
+  color: rgb(37, 155, 36);
+}
+
+.red {
+  background-color: rgb(229, 28, 35);
+}
+
+.redc {
+  color: rgb(229, 28, 35);
+}
+
+/* Navigation */
+
+nav {
+  background-color: rgb(229, 28, 35);
+  color: #ffffff;
+  /*height: 8vh;*/
+  padding: 1em;
+  display: flex;
+}
+
+.nav-left {
+  height: 100%;
+  width: 10%;
+  text-align: right;
+}
+
+.nav-left li {
+  list-style: none;
+  display: inline;
+  font-size: 2.2em;
+}
+
+.nav-left a {
+  color: rgb(255,255,255);
+}
+
+.nav-middle {
+  height: 100%;
+  width: 45%;
+  text-align: right;
+}
+
+.nav-middle li {
+  list-style: none;
+  display: inline;
+  font-size: 1.55em;
+}
+
+nav img {
+  height: 40px;
+  vertical-align: middle;
+}
+
+.nav-right {
+  height: 100%;
+  width: 40%;
+  vertical-align: middle;
+  line-height: 40px;
+}
+.nav-right li {
+  list-style: none;
+  display: inline;
+  padding-left: 1em;
+  font-size: 1.55em;
+}
+
+.nav-right a {
+  color: rgb(255,255,255);
+}
+
+/* main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+}
+
+/* Highlight */
+
+#highlight_container {
+  background-color: rgb(37, 155, 36);
+  width: 300px;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#icons {
+  width: 16%;
+  display: inline-block;
+  padding-left: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+#icons i:first-child {
+  margin-right: .35em;
+}
+
+#find_us {
+  width: 76%;
+  font-size: .83em;
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+#pizza_month {
+  display: block;
+  width: 300px;
+  height: 213px;
+  position: relative;
+}
+
+#pizza_month img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 300px;
+}
+
+.text-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  background-color: rgb(229, 28, 35, 0.5);
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  padding: .5em;
+}
+
+.text-block   a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+/* Menu buttons */
+
+#menu_buttons {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 310px;
+  margin-top: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu_btn {
+  border: none;
+  color: white;
+  width: 140px;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  text-align: center;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 5px 2px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* Social */
+
+#socials {
+  text-align: center;
+}
+
+#socials li {
+  list-style: none;
+  display: inline;
+  padding-left: .6em;
+  font-size: 2em;
+  color: rgb(229, 28, 35);
+}
+
+#socials a {
+  color: rgb(229, 28, 35);
+}
+
+/* Carte */
+
+#carte_buttons {
+  flex-direction: column;
+  max-width: 310px;
+  margin-top: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.carte_btn {
+  border: 3px solid rgb(37, 155, 36);
+  color: white;
+  width: 100%;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: .7em;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* Nos pizzas */
+
+#pizzas_list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pizzas_container {
+  flex-wrap: wrap;
+  margin-right: 7px;
+}
+
+.pizzas_picture img {
+  border: .18em solid rgb(229, 28, 35);
+  border-radius: .75em;
+  width: 132px;
+}
+
+.pizzas_title h3 {
+  text-align: center;
+  color: rgb(37, 155, 36);
+  font-size: 1em;
+}
+
+/* Pizza ouverte */
+
+.pizza_container {
+  background-color: rgb(37, 155, 36);
+  width: 290px;
+  margin-bottom: 1em;
+  border: 2px solid rgb(37, 155, 46);
+}
+
+.pizza_title h2 {
+  color: rgb(229, 28, 35);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: .5em;
+}
+
+.pizza_picture {
+  width: 100%;
+}
+.pizza_picture img {
+  width: inherit;
+}
+
+.pizza_composition {
+  width: 73%;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding-top: .75em;
+  padding-bottom: .75em;
+  padding-left: .75em;
+  vertical-align: middle;
+}
+
+.pizza_price {
+  width: 14%;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  font-size: 1.1em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+#select-style {
+  background-color: rgb(37, 155, 36);
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  padding: .5em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: .3em;
+}
+
+.pizza_amount {
+  text-align: center;
+}
+
+.supplement {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#btn_plus {
+  background-color: rgb(229, 28, 35);
+  padding: .7em 1.1em;
+  border: none;
+  color: rgb(255,255,255);
+  border-radius: 6px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+#pizza_amount {
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  width: 15%;
+  text-align: center;
+  color: rgb(0,0,0);
+  padding-top: .5em;
+  padding-bottom: .5em;
+
+}
+
+#btn_min {
+  background-color: rgb(37, 155, 36);
+  padding: .7em 1.1em;
+  border: none;
+  color: rgb(255,255,255);
+  border-radius: 6px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  margin-left: .3em;
+}
+
+/* Panier */
+
+#basket_form {
+  width: 100%;
+}
+
+table {
+  background-color: rgb(37, 155, 36);
+  color: rgb(255, 255, 255);
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 1.5em;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
+th {
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+}
+
+#sum {
+  background-color: rgb(255, 255, 255);
+  padding-right: 15px;
+
+}
+
+.total {
+  display: inline-block;
+  width: 75%;
+  text-align: right;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.amount {
+  display: inline-block;
+  width: 20%;
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.total_amount {
+  margin-bottom: .4em;
+}
+
+.paiement {
+  text-align: right;
+  font-weight: bold;
+}
+
+input[type=checkbox] {
+  border: 1px solid #f7f7f7;
+  background: #fdfdfd;
+	border-radius: 0;
+	color: rgba(37, 155, 36);
+  margin-top: .4em;
+  padding-top: .8em;
+  padding-bottom: .8em;
+}
+
+.inline {
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.check {
+  width: 10%;
+  display: inline-block;
+}
+
+.check_text {
+  width: 85%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+/* Identification commande */
+
+#hours-style {
+  background-color: rgb(37, 155, 36);
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  padding: .5em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: .3em;
+  margin-bottom: 1em;
+}
+
+/* Commande confirmée */
+
+.order_ok {
+  border: .2em solid rgb(37, 155, 36);
+  width: 100%;
+  height: 200px;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.order_ok p {
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.back_btn {
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 1.5em 1em;
+  text-align: center;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: .7em;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* Emplacements */
+
+#places h2 {
+  color: rgb(229, 28, 35);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: .5em;
+}
+
+#map {
+  height: 400px;
+  margin-bottom: 1em;
+  border: 2px solid green;
+}
+
+#today {
+  text-align: left;
+  width: 100%;
+}
+#today p {
+  text-align: left;
+  width: 100%;
+  font-size: 1.15em;
+  margin-bottom: .8em;
+}
+
+#current_info {
+  width: 100%;
+}
+
+#address {
+  width: 63%;
+  display: inline-block;
+  line-height: 1.2;
+  font-size: .9em;
+}
+
+#city {
+  color: red;
+  font-size: 1.3em;
+}
+
+#currently {
+  width: 35%;
+  display: inline-block;
+  text-align: right;
+}
+
+
+/* Contact */
+
+#contact_text h2 {
+  color: rgb(229, 28, 35);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: .5em;
+}
+
+#contact_text p {
+  line-height: 1.2;
+}
+
+hr {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-width: 1px;
+  width: 100%;
+  border: 1px solid rgb(37, 155, 36);
+}
+
+label {
+  font-weight: bold;
+}
+
+[placeholder] {
+  color: grey;
+  border: 1px solid rgb(211, 211, 211);
+}
+
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  border: 1px solid rgb(211, 211, 211);
+  background: #fdfdfd;
+	border-radius: 0;
+	color: rgba(37, 155, 36);
+  margin-top: .4em;
+  padding: .8em 1em;
+  box-sizing: border-box;
+}
+
+input, textarea {
+	border: none;
+	width: 100%;
+	outline: 0;
+	font-family: "Roboto", sans-serif;
+  font-size: 1em;
+	margin: 0 0 20px;
+}
+
+textarea {
+  border: 1px solid rgb(211, 211, 211);
+	display: block;
+	resize: vertical;
+  margin-top: .4em;
+}
+
+input[type=submit] {
+  border: none;
+  color: white;
+  width: auto;
+  padding: 1.5em;
+  text-align: center;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 16px 2px;
+  border-radius: 12px;
+}
+
+.check_text_legal {
+  width: 88%;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: .7em;
+}
+
+.check_text_legal a {
+  color: green;
+}
+
+/* A propos */
+
+#about {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+#about h2 {
+  color: rgb(229, 28, 35);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: .5em;
+}
+
+#about img {
+  width: inherit;
+  border: 2px solid rgb(37, 155, 36);
+}
+#about_us {
+  margin-bottom: 1em;
+}
+
+#about_us p {
+  line-height: 1.2;
+}
+
+h3 {
+  color: rgb(229, 28, 35);
+  margin-bottom: .5em;
+}
+
+#commitments {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+#commitments li {
+  list-style: none;
+  line-height: 1.2;
+  margin-bottom: .5em;
+}
+
+#commitments i {
+  color: rgb(37, 155, 36);
+  padding-right: .2em;
+}
+
+/* Loading */
+
+#loading {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top:50%;
+  left:50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+.loadimg {
+  width: 80%;
+}
+
+.blink {
+	-webkit-animation: blink .75s linear infinite;
+	-moz-animation: blink .75s linear infinite;
+	-ms-animation: blink .75s linear infinite;
+	-o-animation: blink .75s linear infinite;
+	 animation: blink .75s linear infinite;
+}
+@-webkit-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-o-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+/* Mentions Légales */
+
+#disclaimer {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+#disclaimer h2 {
+  color: rgb(229, 28, 35);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: .5em;
+}
+
+#personal_datas {
+  margin-bottom: 1em;
+}
+
+#personal_datas p {
+  line-height: 1.2;
+}
+
+#access_datas {
+  margin-bottom: 1em;
+}
+
+#access_datas p {
+  line-height: 1.2;
+}

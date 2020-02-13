@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e51c23;
+  }
+  
+  h1{
+    color: #fff;
+  }
+  .green {
+    background-color: #259b24;
+  }
+  
+  .greenc {
+    color: rgb(37, 155, 36);
+  }
+  
+  .red {
+    background-color: rgb(229, 28, 35);
+  }
+  
+  /* Header */
+  
+  header {
+    background-color: rgb(37, 155, 36);
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  header p a{
+    text-decoration    : none;
+    color              : #fff;
+    font-size          : 20px;
+    -webkit-text-stroke: 1px #e51c23;
+  }
+  /* Navigation */
+  
+  nav {
+    background-color: rgb(229, 28, 35);
+    color: #ffffff;
+    /*height: 8vh;*/
+    padding: 1em;
+    display: flex;
+  }
+  
+  .nav-left {
+    height: 100%;
+    width: 10%;
+    text-align: right;
+  }
+  
+  .nav-left li {
+    list-style: none;
+    display: inline;
+    font-size: 4.5em;
+  }
+  
+  .nav-left a {
+    color: rgb(255,255,255);
+  }
+  
+  .nav-middle {
+    height: 100%;
+    width: 45%;
+    text-align: right;
+  }
+  
+  .nav-middle li {
+    list-style: none;
+    display: inline;
+    font-size: 1.55em;
+  }
+  
+  nav img {
+    height: 80px;
+    vertical-align: middle;
+  }
+  
+  .nav-right {
+    height: 100%;
+    width: 40%;
+    vertical-align: middle;
+    line-height: 40px;
+  }
+  .nav-right li {
+    list-style: none;
+    display: inline;
+    padding-left: 1em;
+    font-size: 1.55em;
+  }
+  
+  .nav-right a {
+    color: rgb(255,255,255);
+  }
+  
+  /* main */
+  
+  main {
+    background-color: rgb(229, 28, 35);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+  }
+  
+  /* Logo */
+  
+  #logo {
+    text-align: center;
+  }
+  #logo img {
+    width: 30%;
+  }
+  
+  /* Carte */
+  
+  #carte_buttons {
+    flex-direction: column;
+    max-width: 310px;
+    margin-top: 1em;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carte_btn {
+    border: 3px solid rgb(37, 155, 36);
+    color: white;
+    width: 100%;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: .7em;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  
+  /* Menu */
+  
+  #menu_list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .section_container {
+    flex-wrap: wrap;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    width: 302px;
+    border: 4px solid rgb(37, 155, 36);
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .section_picture {
+    width: 302px;
+  }
+  
+  .section_picture img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .section_title {
+      background-color: rgb(255, 255, 255);
+  }
+  
+  .section_title h3 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  
+  
+ 
+  /* Tournée */
+  
+  #tour h2 {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  
+  #tour_table {
+    width: 100%;
+    border: 3px solid rgb(37, 155, 36);
+  }
+  
+  #tour_table_content {
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      border-spacing:0 25px;
+      width: 100%;
+  }
+  #tour_table_content thead {
+      width: 25%;
+      font-size: 1.3em;
+      text-transform: uppercase;
+  }
+
+  #tour_table_content tr {
+      width: 25%;
+      text-align: center;
+  }
+
+  #tour_table_content td {
+    font-size: 12px;
+    text-align: center;
+}
+
+img{
+  width: 25%;
+}
+
